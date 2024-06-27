@@ -1,0 +1,40 @@
+Pruebas en Postman
+Inicializar la Base de Datos:
+
+Método: GET
+URL: http://localhost:3000/api/books/initialize?topic=space
+Obtener Libros:
+
+Método: GET
+URL: http://localhost:3000/api/books
+Crear un Libro:
+
+Método: POST
+URL: http://localhost:3000/api/books
+Body (JSON):
+json
+Copy code
+{
+  "id": 999,
+  "title": "New Book",
+  "authors": ["John Doe"],
+  "subjects": ["Fiction"],
+  "languages": ["en"],
+  "media_type": "Text",
+  "formats": {},
+  "download_count": 0
+}
+Actualizar un Libro:
+
+Método: PUT
+URL: http://localhost:3000/api/books/{id}
+Body (JSON):
+json
+Copy code
+{
+  "title": "Updated Book"
+}
+Eliminar un Libro:
+
+Método: DELETE
+URL: http://localhost:3000/api/books/{id}
